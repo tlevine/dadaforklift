@@ -1,3 +1,3 @@
 library(sqldf)
 
-options(sqldf.driver = "RPostgreSQL", dbname = 'tlevine')
+q <- function(sql) sqldf(sql, drv = 'RPostgreSQL', dbname = 'tlevine')
